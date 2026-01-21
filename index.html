@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Factorial Calculator</title>
+
+<style>
+    body {
+        font-family: Arial;
+        background: black;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    button {
+        padding: 10px 25px;
+        font-size: 16px;
+        background-color: green;
+        color: white;
+    }
+</style>
+
+</head>
+
+<body>
+
+<h2>Factorial Calculator</h2>
+<button onclick="getfactorial()">Calculate</button>
+
+<script>
+function getfactorial() {
+    var n = prompt("Enter a number to calculate its factorial");
+    var fact = 1;
+
+    for (var i = 1; i <= n; i++) {
+        fact = fact * i;
+    }
+
+    alert("Factorial of " + n + " is : " + fact);
+}
+</script>
+
+</body>
+</html>
